@@ -10,7 +10,16 @@ export class ImageService {
 
   constructor(private http: HttpClient) { }
 
+  private jsonUrl = '/assets/images.json';
+
   getSlides(): Observable<SlideInterface[]> {
     return this.http.get<SlideInterface[]>('/assets/images.json');
   }
+
+  // Функция для обновления комментариев в JSON файле
+  updateComments(comments: any[]): Observable<any> {
+    return this.http.put(this.jsonUrl, comments);
+  }
+
+  
 }

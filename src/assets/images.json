@@ -1,26 +1,47 @@
 [
-    {
-      "url": "https://sportishka.com/uploads/posts/2022-04/1650707076_21-sportishka-com-p-kreml-moskva-krasivo-foto-22.jpg",
-      "title": "Moskow",
-      "author": "Ivan Ivanov",
-      "date": "2023-01-15"
-    },
-    {
-      "url": "https://smapse.ru/storage/2018/07/letnij-intensiv-po-anglijskomu-v-n-yu-jorke-1.jpg",
-      "title": "New York",
-      "author": "Jane Smith",
-      "date": "2023-02-20"
-    },
-    {
-      "url": "https://sportishka.com/uploads/posts/2022-04/1650488882_23-sportishka-com-p-frantsiya-parizh-dostoprimechatelnosti-kra-26.jpg",
-      "title": "Paris",
-      "author": "Paul Abel",
-      "date": "2023-03-10"
-    },
-    {
-      "url": "https://img3.akspic.ru/attachments/originals/2/9/3/4/0/104392-fortifikaciya-gora-chudesa_mira-gornaya_stanciya-nebo-3071x2047.jpg",
-      "title": "China",
-      "author": "Li Hin",
-      "date": "2023-03-10"
-    }
-  ]
+  {
+    "url": "https://sportishka.com/uploads/posts/2022-04/1650707076_21-sportishka-com-p-kreml-moskva-krasivo-foto-22.jpg",
+    "title": "Moskow",
+    "author": "Ivan Ivanov",
+    "date": "2023-01-15",
+    "comments": [
+      {
+        "author": "John Doe",
+        "text": "Beautiful picture!",
+        "date": "2023-01-20"
+      },
+      {
+        "author": "Alice Smith",
+        "text": "I love this city!",
+        "date": "2023-01-25"
+      }
+    ]
+  },
+  {
+    "url": "https://smapse.ru/storage/2018/07/letnij-intensiv-po-anglijskomu-v-n-yu-jorke-1.jpg",
+    "title": "New York",
+    "author": "Jane Smith",
+    "date": "2023-02-20",
+    "comments": [
+      {
+        "author": "Bob Johnson",
+        "text": "Amazing view!",
+        "date": "2023-02-21"
+      }
+    ]
+  },
+  {
+    "url": "https://sportishka.com/uploads/posts/2022-04/1650488882_23-sportishka-com-p-frantsiya-parizh-dostoprimechatelnosti-kra-26.jpg",
+    "title": "Paris",
+    "author": "Paul Abel",
+    "date": "2023-03-10",
+    "comments": []
+  },
+  {
+    "url": "https://img3.akspic.ru/attachments/originals/2/9/3/4/0/104392-fortifikaciya-gora-chudesa_mira-gornaya_stanciya-nebo-3071x2047.jpg",
+    "title": "China",
+    "author": "Li Hin",
+    "date": "2023-03-10",
+    "comments": []
+  }
+]

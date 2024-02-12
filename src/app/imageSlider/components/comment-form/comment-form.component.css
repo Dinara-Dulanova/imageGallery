@@ -1,0 +1,47 @@
+.imageComments {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  width: 25%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  z-index: 1;
+}
+
+.comments_title {
+  margin-top: 5px;
+}
+
+.comments_list {
+  text-decoration: none;
+  list-style: none;
+  margin: 0 0 0 5px;
+  padding: 0;
+
+}
+
+.comment_author {
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.comment_text {
+  background-color: rgb(188, 183, 183);
+  padding: 5px;
+  margin: 0 0 2px;
+}
+
+.comment_date {
+  margin: 0 0 5px;
+  color: rgb(108, 106, 106);
+}
+
+.comment_form {
+    display: grid;
+    gap: 5px;
+}

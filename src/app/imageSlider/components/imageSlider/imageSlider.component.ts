@@ -15,6 +15,8 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
 
   currentIndex: number = 0;
   timeoutId?: number;
+  isModalOpen = false;
+  selectedImageUrl!: string;
 
   ngOnInit(): void {}
 
@@ -49,7 +51,6 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
     }
   }
   
-  
   getCurrentSlideTitle() {
     if (this.slides.length > 0 && this.currentIndex >= 0 && this.currentIndex < this.slides.length) {
       return this.slides[this.currentIndex].title;
@@ -57,5 +58,19 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
       return '';
     }
   }
+
+  // Метод для открытия модального окна
+  openModal(): void {
+    console.log(this.slides[this.currentIndex].url);
+    this.selectedImageUrl = this.slides[this.currentIndex].url;
+    this.isModalOpen = true;
+  }
+
+  // Метод для закрытия модального окна
+  closeModal(): void {
+    this.isModalOpen = false;
+
+}
+
   
 }

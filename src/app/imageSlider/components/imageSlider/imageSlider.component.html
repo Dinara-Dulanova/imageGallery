@@ -2,6 +2,7 @@
   <div>
     <div (click)="goToPrevious()" class="leftArrow">❰</div>
     <div (click)="goToNext()" class="rightArrow">❱</div>
+    <div (click)="openModal()" class="previewButton"></div>
   </div>
   <img [src]="getCurrentSlideUrl()" [alt]="getCurrentSlideTitle()" class="slide" />
 
@@ -14,4 +15,19 @@
       [src]="slide.url" [alt]="slide.title"
     >
   </div>
+
+  <!--компонент с модалкой изображения-->
+  <app-image-preview-modal
+    *ngIf="isModalOpen"
+    [imageUrl]="selectedImageUrl"
+    (close)="closeModal()"
+  ></app-image-preview-modal>
+
+
+  <!--компонент с комментариями изображения-->
+  <app-comment-form
+    *ngIf="isModalOpen"
+    [imageUrl]="selectedImageUrl"
+  ></app-comment-form>
+
 </div>

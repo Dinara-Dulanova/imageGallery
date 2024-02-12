@@ -3,4 +3,11 @@ export interface SlideInterface {
   title: string;
   author: string;
   date: string;
+  comments?: CommentInterface[]; // Опциональный массив комментариев
+}
+
+export interface CommentInterface {
+  author: string;
+  text: string;
+  date: string;
 }

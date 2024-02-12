@@ -1,0 +1,17 @@
+<div class="imageComments">
+  <h2 class="comments_title">Comments:</h2>
+  <ul class="comments_list">
+    <li *ngFor="let comment of comments">
+      <p class="comment_author">{{ comment.author }}:</p> 
+      <p class="comment_text">{{ comment.text }}</p>
+      <p class="comment_date">дата публикации {{ comment.date }}</p>
+    </li>
+  </ul>
+    
+  <form class="comment_form" (submit)="addComment()">
+    <input type="text" name="name" placeholder="Your Name" [(ngModel)]="newComment.author" required>
+    <input name="commentForm_text" placeholder="Your Comment" [(ngModel)]="newComment.text" required>
+    <button type="submit" [disabled]="!newComment.author || !newComment.text">Add Comment</button>
+  </form>
+</div>
+  
